@@ -23,16 +23,6 @@ Open `index.html` in any modern web browser to use the app.
 
 No build tools or dependencies required.
 
-
-## File Structure
-
-/ (Travel Packing Checklist)
-│
-├── index.html # Main HTML file
-├── styles.css # CSS styles
-├── script.js # JavaScript logic
-└── asset.png # Favicon image 
-
 ## License
 
 This project is open-source and free to use.
