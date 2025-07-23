@@ -1,0 +1,150 @@
+/* Background Image */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container with translucent glass effect */
+.container {
+  max-width: 650px;
+  margin: 4rem auto;
+  padding: 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Buttons Row */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+button {
+  flex: 1;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Primary generate button */
+#generateBtn {
+  background: #3498db;
+  color: white;
+}
+
+#generateBtn:hover {
+  background: #2e86de;
+}
+
+/* Clear button */
+.clear {
+  background: #e74c3c;
+  color: white;
+}
+
+.clear:hover {
+  background: #c0392b;
+}
+
+/* Checklist card */
+#packing-list {
+  margin-top: 2.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  animation: fadeInUp 0.5s forwards;
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Checklist content */
+#packing-list h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0.8rem 0;
+  font-size: 1.05rem;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  appearance: none;
+  position: relative;
+  background: #fff;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #3498db;
+  border-color: #2e86de;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '✔';
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+.ic{
+    height:12px;
+    width:13px;
+}
